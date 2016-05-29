@@ -1,0 +1,10 @@
+{
+    "name" : "sturple/fg-theme-master-child-default",
+    "version" : "0.0.1",
+    "description" : "Basic Twig template theme child",
+    "type" : "wordpress-theme", 
+    "require": {
+        "php" : ">=5.4",        
+        "composer/installers": "~1.0"
+    }
+}

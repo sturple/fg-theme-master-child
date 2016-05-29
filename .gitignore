@@ -1,0 +1,6 @@
+assets/*
+!assets/css/
+!assets/js/
+node_modules
+vendor/*
+composer.lock 
