@@ -1,32 +1,32 @@
 social:        
     facebook:
-        url: 'https://www.facebook.com/ShoreClubTC'
+        url: 'https://www.facebook.com/'
         icon:
             inner: fa-facebook-f
             outer: fa-circle
     twitter:
-        url: 'https://twitter.com/ShoreClubTC'
+        url: 'https://twitter.com/'
         icon:
             inner: fa-twitter
             outer: fa-circle
     googleplus:
-        url: 'https://plus.google.com/u/0/+Theshoreclubtc1/posts'
+        url: 'https://plus.google.com/'
         icon:
             inner: fa-google-plus
             outer: fa-circle
     youtube:
-        url: 'https://www.youtube.com/channel/UCi2sjYezyftYDP7cT2z6Kcw'
+        url: 'https://www.youtube.com/'
         icon:
             inner: fa-youtube
             outer: fa-circle        
     pinterest:
-        url: 'https://www.pinterest.com/theshoreclub/'
+        url: 'https://www.pinterest.com/'
         icon:
             inner: fa-pinterest-p
             outer: fa-circle       
    
     blog:
-        url: 'http://www.theshoreclubtc.com/blog/'
+        url: '/blog/'
         icon:
             inner: fa-rss
             outer: fa-circle       
@@ -35,18 +35,18 @@ social:
         
 
 company:
-    name: The Shore Club Turks & Caicos
+    name: Fifth Gear Marketing
     address:
-        street: PO Box 681       
-        province: Providenciales       
-        country: Turks and Caicos, B.W.I.
+        street: Street       
+        province: Province       
+        country: Country
 phone:
-    toll: 888.808.9488
-    reception: 649.339.8000  
+    toll: 888.000.0000
+    reception: 250.000.0000  
     
     
 email:
-    info: reservations@theshoreclubtc.com
+    info: info@fifthgeardev.com
     
     
 settings:
@@ -54,7 +54,7 @@ settings:
         home:
             template: 'slideshow-home'
         logo:
-            url: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo-the-shore-club-white.png
+            url: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo.png
             alt: Logo
     page:
         grid:
@@ -66,7 +66,7 @@ settings:
             left:  col-lg-6 col-lg-push-6 
             right: col-lg-6 col-lg-pull-6
         logo:
-            url: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo-the-shore-club-white.png
+            url: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo.png
             alt:
         social:
             enable: true
@@ -76,10 +76,10 @@ settings:
         grid:
             left:  col-lg-6 col-lg-push-6 
             right: col-lg-6 col-lg-pull-6
-        text: ', The Shore Club Turks & Caicos'
-        year: 2016
+        text: ', Fifth Gear Marketing'
+        year: 2017
     modal:
-        logo: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo-the-shore-club-white.png
+        logo: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo.png
         
 postid:
     terms: 13
@@ -102,53 +102,6 @@ slideshow:
         interval: 6000
         outer_class : feature-carousel carousel-fade
         items:
-            -
-                title:                
-                images: 
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/the-shore-club-on-long-bay-turks-caicos.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/the-shore-club-on-long-bay-turks-caicos.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/the-shore-club-on-long-bay-turks-caicos.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/the-shore-club-on-long-bay-turks-caicos.jpg            
-            -
-                title :                 
-                images: 
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/the-shore-club-providenciales-turks-caicos.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/the-shore-club-providenciales-turks-caicos.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/the-shore-club-providenciales-turks-caicos.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/the-shore-club-providenciales-turks-caicos.jpg           
-
-                
-            -
-                title :
-                images :
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/the-shore-club-on-long-bay-turks-caicos-02.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/the-shore-club-on-long-bay-turks-caicos-02.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/the-shore-club-on-long-bay-turks-caicos-02.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/the-shore-club-on-long-bay-turks-caicos-02.jpg
-                
-            -
-                title : 
-              
-                images : 
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/pool-the-shore-club-on-long-bay.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/pool-the-shore-club-on-long-bay.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/pool-the-shore-club-on-long-bay.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/pool-the-shore-club-on-long-bay.jpg
-                
-            -
-                title :                 
-                images : 
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/kitchen-the-shore-club-on-long-bay.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/kitchen-the-shore-club-on-long-bay.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/kitchen-the-shore-club-on-long-bay.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/kitchen-the-shore-club-on-long-bay.jpg
-            -
-                title :                 
-                images : 
-                    xl : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/bedroom-the-shore-club-on-long-bay.jpg
-                    md : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/1200/bedroom-the-shore-club-on-long-bay.jpg
-                    sm : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/990/bedroom-the-shore-club-on-long-bay.jpg
-                    xxs : /wp-content/themes/wp-theme-fg-child/assets/images/slideshows/home/480/bedroom-the-shore-club-on-long-bay.jpg                
 gallery:
     home:
         directory : 
@@ -175,33 +128,3 @@ gallery:
             enable:
                
         images : 
-            -
-                src : '01.jpg'
-                title: 820 Feet of white sand Caribbean beachfront.           
-            -
-                src : '02.jpg'
-                title: Featuring an exclusive selection of elegantly appointed estate villas.
-            -
-                src : '04.jpg'
-                title: Spectacular panoramic views abound from every room. 
-            -
-                src : '10.jpg'
-                title: Generously-sized suites offer outstanding, panoramic views of Long Bay Beach.
-            -
-                src : '05.jpg'
-                title: Guests enjoy the pristine turquoise waters of Long Bay, just steps from their suite or villa.
-            -
-                src : '06.jpg'
-                title: Long Bay is outstanding for wind surfing, kite boarding, SUP boarding and other outdoor activities.
-            -
-                src : '09.jpg'
-                title: Large well-appointed kitchens are bright, spacious and perfect for entertaining family and friends alike. 
-            -
-                src : '07.jpg'
-                title: The Shore Club pools are simply luxurious.  Rest, relax and rejuvinate. 
-            -
-                src : '08.jpg'
-                title: Bathrooms are spacious, luxurious and beautifully appointed.
-            -
-                src : '03.jpg'
-                title: A lush nine-acre landscape featuring unobstructed beach views from every suite and villa. 
