@@ -1,13 +1,13 @@
 @btn-primary-color: #fff;
 @btn-primary-color-hover: #fff;
-@btn-primary-background: #c45e20 ;
-@btn-primary-background-hover: #ed7019;
+@btn-primary-background: #b9080f ;
+@btn-primary-background-hover: #ec1d25;
 @btn-primary-padding: 8px 40px;
 @btn-primary-padding-lg: @btn-primary-padding;
 @btn-primary-padding-md: 8px 24px;
 @btn-primary-padding-sm: @btn-primary-padding;
 @btn-primary-font-size-md : 1.2;
-@btn-primary-radius : 0px;
+@btn-primary-radius : 2px;
 @btn-primary-border: none;
 @btn-primary-text-transform: capitalize;
 
@@ -32,10 +32,10 @@
 
 @btn-secondary-color: #fff;
 @btn-secondary-color-hover: #fff;
-@btn-secondary-background: #6eacec;
-@btn-secondary-background-hover: #84bbf4;
-@btn-secondary-padding: 8px 40px;
-@btn-secondary-radius : 0px;
+@btn-secondary-background: transparent;
+@btn-secondary-background-hover: @btn-primary-background-hover;
+@btn-secondary-padding: @base-margin (@base-margin * 2);
+@btn-secondary-radius : 2px;
 
 
 @btn-tag-color: @link-color;
@@ -48,13 +48,42 @@
 @btn-sm-padding: 5px 30px;
 @btn-xs-padding: 1px 20px;
 
-@modal-header-background-image: url('/wp-content/themes/wp-theme-fg/assets/images/templates/logo-the-shore-club-white.png');
-@modal-header-background-color: #1e7495;
+@modal-header-background-image: url('@{assetsPath}/images/logo.png');
+@modal-header-background-color: #333;
 @modal-close-color: #dddddd ;
 @modal-close-color-hover: @link-color-hover;
 
+
+.home, .blog {
+	.container {
+		margin-top: 0 ;
+	}
+}
+
+
+
+.inner-container {
+	padding: @base-margin 50px @base-margin * 2;
+	
+}
+
+
+.form-horizontal .control-label {
+	text-align: left;
+}
+.form-control {
+	font-family: @heading-font-family;
+}
 .panel-group .panel {
 	.radius(0);
+}
+.panel-group {
+	.collapse-title {
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0;
+		padding: 0 0 6px;;
+	}
 }
 .panel-default>.panel-heading {
 	background-color: rgb(245, 245, 245);
@@ -71,12 +100,15 @@
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body { border-top: 0;}*/
 
 .panel-title {
+	font-size: 1em;
 	* {
-		.font-size(1.6);
+		
 		text-transform: capitalize;
 	}
 }
-
+.panel-body {
+	/*font-size: 0.65em;*/
+}
 
 
 .inverse {
@@ -87,14 +119,41 @@
 }
 
 
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	border-top: 1px dotted @line-seperator;
+	padding: 8px 15px;
+	&.center {
+		text-align: center;
+	}
+}
+
+.table{
+	&.no-borders {
+		td {
+		   border: none;
+		   padding: 4px 8px 0 0;;
+		}
+	}
+		
+}
+
+
+
 
 /*** BTN LOGIC **/
+.btn {
+	.font-size(1.6);
+}
+
 
 .btn-default, .summit {
 	border: @btn-default-border;
 	color: @btn-default-color-hover;	
 	.btn-template(@btn-default-color,@btn-default-background, @btn-default-padding,@btn-default-radius);
 	border: 1px solid #ccc;
+	font-family: @heading-font-family;
+	text-transform: uppercase;
+	font-weight: bold;
 	
 	&:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
 		.btn-template-hover(@btn-default-background-hover,@btn-primary-color-hover);
@@ -110,6 +169,8 @@
 
 .btn-primary, input[type="submit"] {
 	font-family: 'Lora', sans-serif;
+	font-weight: bold;
+	
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 	.box-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
 	.btn-template(@btn-primary-color,@btn-primary-background, @btn-primary-padding,@btn-primary-radius);
@@ -122,7 +183,8 @@
 	&:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {.btn-template-hover(@btn-primary-background-hover,@btn-primary-color-hover)}
 	
 
-	
+	font-family: @heading-font-family;
+	text-transform: uppercase;	
 	@media screen and (max-width: @screen-lg-max) {padding: @btn-primary-padding-lg;}
 	@media screen and (max-width: @screen-md-max) {padding: @btn-primary-padding-md; .font-size(@btn-primary-font-size-md);}
 	@media screen and (max-width: @screen-sm-max) {padding: @btn-primary-padding-sm;}
@@ -132,8 +194,12 @@
 
 .btn-secondary {
 	.btn-template(@btn-secondary-color,@btn-secondary-background, @btn-secondary-padding,@btn-secondary-radius);
+	border: 1px solid rgba(255,255,255,0.8);
+	font-family: @heading-font-family;
+	text-transform: uppercase;
 	&:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
-		.btn-template-hover(@btn-secondary-background-hover,@btn-secondary-color-hover)		
+		.btn-template-hover(@btn-secondary-background-hover,@btn-secondary-color-hover);
+		border: 1px solid @btn-secondary-background-hover;
 		}
 	@media screen and (max-width: @screen-lg-max) {padding: @btn-primary-padding-lg;}
 	@media screen and (max-width: @screen-md-max) {padding: @btn-primary-padding-md; .font-size(@btn-primary-font-size-md);}
@@ -157,7 +223,10 @@
 	
 	
 }
-.btn-lg, .btn-group-lg > .btn {  padding: @btn-lg-padding; .radius(@btn-primary-radius);}
+.btn-lg, .btn-group-lg > .btn {
+	padding: @btn-lg-padding !important;	
+	
+	}
 .btn-sm, .btn-group-sm > .btn {  padding: @btn-sm-padding; .radius(@btn-primary-radius);}
 .btn-xs, .btn-group-xs > .btn {  padding: @btn-xs-padding; .radius(@btn-primary-radius);}
 
@@ -166,7 +235,9 @@
 /*** MODAL DARK THEME ***/
 .modal-dialog {
 	.modal-title {
-		margin-bottom: 24px;
+		margin-bottom: 12px;
+		text-align: left;
+		padding: 12px 0 0;
 	}
 	.modal-content {		
 		.radius(0);
@@ -246,20 +317,48 @@
     .collapse.in{display:block !important;}
 }
 
-ul.nav-tabs > li {
-	.font-size(1.4);
-	margin-left: 0;
-	margin-right: 2px;
-	padding-left: 0;
-	&.active {
-		font-weight: bold;
-	}
-	> a {
-		.radius(0);
-		border: 1px solid #ddd;
-	}
-	> a:hover {
-		background-color: #fcfcfc;
-		border-color: #ddd;
-	}
+ul.nav-tabs {
+	border-bottom: 4px solid #333;
+	margin-top: 0;
+	margin-bottom: @base-margin * 1.25;
+	
+	> li {
+		.transition(0.1s);
+		.font-size(1.4);
+		margin-left: -1px;
+		margin-right: 8px;
+		padding-left: 0;
+		> a {
+			.transition(0s);			
+			.radius(0);
+			border: none;
+			background-color: transparent;
+		}
+		> a:hover, a:focus {
+			background-color: transparent;
+			.transition(0s);		
+		}		
+		&.active {
+			> a {
+				background-color: #333;
+				color: rgba(255,255,255,0.85);
+				
+				
+				&:after {
+					position: absolute;
+					right: -24px;
+					top: 0px;
+					content: '';
+					border-right: 24px solid transparent;
+					border-bottom: 41px solid #333;
+				}
+				&:hover, &:focus {
+					background-color: #333;
+					color: rgba(255,255,255,1.0) !important; 
+				}
+				
+			}	
+		}
+
+	}	
 }

@@ -3,33 +3,41 @@ social:
         url: 'https://www.facebook.com/'
         icon:
             inner: fa-facebook-f
-            outer: fa-circle
+           
     twitter:
         url: 'https://twitter.com/'
         icon:
             inner: fa-twitter
-            outer: fa-circle
+           
     googleplus:
         url: 'https://plus.google.com/'
         icon:
             inner: fa-google-plus
-            outer: fa-circle
+           
     youtube:
         url: 'https://www.youtube.com/'
         icon:
             inner: fa-youtube
-            outer: fa-circle        
+                
     pinterest:
         url: 'https://www.pinterest.com/'
         icon:
             inner: fa-pinterest-p
-            outer: fa-circle       
+    instagram:
+        url: 'https://www.instagram.com'
+        icon:
+            inner: fa-instagram
+            
+    tripadvisor:
+        url: 'https://www.tripadvisor.com'
+        icon:
+            inner: fa-tripadvisor                
    
     blog:
         url: '/blog/'
         icon:
             inner: fa-rss
-            outer: fa-circle       
+                
 
                    
         
@@ -88,6 +96,7 @@ postid:
         
 forms:
     footer:
+        id: 4
         
         
         
