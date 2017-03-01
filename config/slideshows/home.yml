@@ -1,0 +1,24 @@
+id : homepage-slideshow
+controls : true
+indicators : false
+captions : false
+titles : false
+interval: 8000
+root: {{site.url}}/wp-content/themes/fg-theme-master-child-default/assets/images/slideshow/1920/
+outer_class : feature-carousel carousel-fade
+items:
+    -
+        title : ''
+        url : 01.jpg
+    -
+        title : ''
+        url : 02.jpg        
+    -
+        title : ''
+        url : 03.jpg
+    -
+        title : ''
+        url : 04.jpg
+    -
+        title : ''
+        url : 05.jpg

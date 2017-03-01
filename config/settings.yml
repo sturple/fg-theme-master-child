@@ -37,10 +37,6 @@ social:
         url: '/blog/'
         icon:
             inner: fa-rss
-                
-
-                   
-        
 
 company:
     name: Fifth Gear Marketing
@@ -58,6 +54,9 @@ email:
     
     
 settings:
+    header:
+        logo:
+            url: /assets/images/logo-gcbc.png
     slideshow:
         home:
             template: 'slideshow-home'
@@ -74,8 +73,8 @@ settings:
             left:  col-lg-6 col-lg-push-6 
             right: col-lg-6 col-lg-pull-6
         logo:
-            url: /wp-content/themes/wp-theme-fg-child/assets/images/templates/logo.png
-            alt:
+            url: /assets/images/logo-gcbcf-white.png
+            alt: GCBC Logo
         social:
             enable: true
 
@@ -98,19 +97,11 @@ forms:
     footer:
         id: 4
         
-        
-        
-        
 slideshow:
+    location: afternav    
     home:
-        id : homepage-slideshow
-        controls : false
-        indicators : true
-        captions : false
-        titles : false
-        interval: 6000
-        outer_class : feature-carousel carousel-fade
-        items:
+        '@import' : 'slideshows/home.yml'
+      
 gallery:
     home:
         directory : 

@@ -7,3 +7,51 @@
 @script-font-size-sm: 4em;
 @pre-nav-background: #333;
 
+
+
+.section {
+    &.section-home-testimonials {
+        min-height: 200px;
+        background-repeat: repeat-x;
+        background-position: bottom center;
+        background-size: 100%;
+        background-color: #EFF0DB;
+           
+    }
+    &.section-home-booking {
+        
+    }
+    &.section-home-content {
+        min-height: 600px;
+        .inner-container > div {
+            background-color: rgba(255,255,255, 0.8);
+            padding: @base-margin * 4;
+            
+        }
+    }
+    &.section-home-gallery-instagram {
+        
+    }    
+    &.section-home-awards {
+        
+    }
+
+	@media screen and (min-width: @screen-xs-max) {
+
+	}
+	@media screen and (min-width: @screen-sm-max){
+
+	}
+	@media screen and (min-width: @screen-md-max){
+	
+	}
+	
+	@media screen and (min-width: @screen-lg-max){		
+		.inner-container > div {
+            margin: @base-margin @base-margin * 3;
+        }
+	
+	}
+
+}
+

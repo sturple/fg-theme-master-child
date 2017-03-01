@@ -1,6 +1,12 @@
 /******* @Media Variables ********/
+.section {
+  border: 1px solid black;
+}
 .container {
   border: 1px solid blue;
+}
+.inner-container {
+  border: 1px solid green;
 }
 footer {
   border: 1px solid #000;
@@ -60,7 +66,7 @@ footer .footer-col-3 {
   margin-top: 0 ;
 }
 .inner-container {
-  padding: 25px 50px 50px;
+  padding: 15px 0;
 }
 .form-horizontal .control-label {
   text-align: left;
@@ -293,9 +299,9 @@ input[type="submit"][disabled] {
 }
 .btn-secondary {
   color: #fff !important;
-  padding: 25px 50px;
-  background-color: transparent;
-  *background-color: transparent;
+  padding: 15px 30px;
+  background-color: #000;
+  *background-color: #000;
   background-image: none;
   background-repeat: repeat-x;
   border-color: transparent;
@@ -492,7 +498,7 @@ input[type="submit"][disabled] {
 ul.nav-tabs {
   border-bottom: 4px solid #333;
   margin-top: 0;
-  margin-bottom: 31.25px;
+  margin-bottom: 18.75px;
 }
 ul.nav-tabs > li {
   -webkit-transition: all 0.1s ease-out;
@@ -560,7 +566,7 @@ ul.nav-tabs > li.active > a:focus {
 /*** this is optional stuff for nav bar ***/
 /**** wordpress widget navbars *******/
 .menu ul {
-  padding: 12.5px 0 25px;
+  padding: 7.5px 0 15px;
 }
 .menu ul li {
   font-size: 0.75em;
@@ -594,7 +600,7 @@ ul.nav-tabs > li.active > a:focus {
 }
 .pre-navigation .social-icons {
   position: relative;
-  margin: 0 25px;
+  margin: 0 15px;
   font-size: 1.4em;
 }
 .pre-navigation .pre-nav-right-column {
@@ -646,7 +652,7 @@ ul.nav-tabs > li.active > a:focus {
 }
 .navbar .navbar-brand {
   top: -25px;
-  left: 87.5px;
+  left: 52.5px;
 }
 .navbar .navbar-toggle,
 .navbar .navbar-toggle:visited .navbar .navbar-toggle:focus {
@@ -735,7 +741,7 @@ ul.nav-tabs > li.active > a:focus {
     border-bottom: 8px solid #000;
   }
   .navbar .nav {
-    margin: 24px 75px 0 0 !important;
+    margin: 24px 45px 0 0 !important;
   }
   .navbar .nav > li > a:focus,
   .navbar .nav > li > a:hover,
@@ -770,7 +776,7 @@ ul.nav-tabs > li.active > a:focus {
   text-decoration: none;
 }
 .search-header {
-  padding-right: 25px;
+  padding-right: 15px;
 }
 .search-header .searchbox-open input {
   height: 26px;
@@ -1494,7 +1500,7 @@ article .articlePostedIn {
 /********* FOOTER ***********/
 .footer {
   z-index: 2;
-  background-color: #1e7495;
+  background-color: #187177;
   color: #ccc;
 }
 .footer .column-wrapper {
@@ -1556,9 +1562,6 @@ article .articlePostedIn {
 .footer .social-icons i.icon-outer {
   color: #dddddd;
 }
-.footer .footer-terms {
-  text-align: right;
-}
 #header-container {
   position: relative;
 }
@@ -1583,5 +1586,24 @@ article .articlePostedIn {
   #header-container .logo img {
     max-width: 100%;
     width: 500px;
+  }
+}
+.section.section-home-testimonials {
+  min-height: 200px;
+  background-repeat: repeat-x;
+  background-position: bottom center;
+  background-size: 100%;
+  background-color: #EFF0DB;
+}
+.section.section-home-content {
+  min-height: 600px;
+}
+.section.section-home-content .inner-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section .inner-container > div {
+    margin: 15px 45px;
   }
 }
